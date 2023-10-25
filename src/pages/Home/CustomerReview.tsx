@@ -68,7 +68,7 @@ const CustomerReview = () => {
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
       >
         {review.map((item): any => (
-          <SwiperSlide>
+          <SwiperSlide key={item._id}>
             <Flex
               gap="middle"
               align="center"

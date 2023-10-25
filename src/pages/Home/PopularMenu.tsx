@@ -582,7 +582,7 @@ const PopularMenu = () => {
       <SectionTitle subheader="Check it out" header="From our menu" />
       <Row gutter={[16, 16]}>
         {data.map((item: any) => (
-          <Col sm={24} lg={12} className="gutter-row">
+          <Col key={item._id} sm={24} lg={12} className="gutter-row">
             <MenuItem key={item.id} item={item} />
           </Col>
         ))}
