@@ -1,7 +1,7 @@
+"use client";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
-import { Card, Flex, Grid } from "antd";
-import RecommendMenu from "./RecommendMenu";
-const { Meta } = Card;
+import { Flex, Grid } from "antd";
+import RecommendMenu from "./RecomedMenu/RecommendMenu";
 const { useBreakpoint } = Grid;
 const menu = [
   {
@@ -46,13 +46,13 @@ const CheffRecommend = () => {
       {lg ? (
         <Flex gap="large">
           {menu.map((item: any) => (
-            <RecommendMenu key={item.id} item={item} />
+            <RecommendMenu key={item?._id} item={item} />
           ))}
         </Flex>
       ) : (
         <Flex gap="large" vertical>
           {menu.map((item: any) => (
-            <RecommendMenu key={item.id} item={item} />
+            <RecommendMenu key={item?._id} item={item} />
           ))}
         </Flex>
       )}

@@ -1,3 +1,4 @@
+"use client";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
@@ -68,7 +69,7 @@ const CustomerReview = () => {
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
       >
         {review.map((item): any => (
-          <SwiperSlide key={item._id}>
+          <SwiperSlide key={item?._id}>
             <Flex
               gap="middle"
               align="center"
@@ -76,7 +77,7 @@ const CustomerReview = () => {
               style={{ padding: "15px 0px" }}
             >
               <div>
-                <Rating value={item.rating} style={{ width: "250px" }} />
+                <Rating value={item?.rating} style={{ width: "250px" }} />
               </div>
               <div>
                 <FaQuoteLeft style={{ width: "30px", height: "30px" }} />
@@ -84,7 +85,7 @@ const CustomerReview = () => {
               <p
                 style={lg ? { padding: "0px 150px" } : { padding: "0px 50px" }}
               >
-                {item.details}
+                {item?.details}
               </p>
               <h3
                 style={{
@@ -93,7 +94,7 @@ const CustomerReview = () => {
                   fontWeight: "bold",
                 }}
               >
-                {item.name}
+                {item?.name}
               </h3>
             </Flex>
           </SwiperSlide>

@@ -1,3 +1,4 @@
+"use client";
 import { Button, Card } from "antd";
 import Image from "next/image";
 const { Meta } = Card;

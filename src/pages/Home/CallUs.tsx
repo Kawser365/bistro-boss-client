@@ -1,3 +1,4 @@
+"use client";
 const CallUs = () => {
   return (
     <section style={{ marginTop: "50px" }}>

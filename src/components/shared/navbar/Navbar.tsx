@@ -1,4 +1,3 @@
-"use client";
 import { MenuFoldOutlined } from "@ant-design/icons";
 import { Drawer, Grid, Layout } from "antd";
 import { useState } from "react";
@@ -20,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="menuBar">
       <div className="logo">
-        <a href="" style={{ textDecoration: "none" }}>
+        <a href="" style={{ textDecoration: "none", color: "#fbb034" }}>
           Bistro Boss
         </a>
       </div>

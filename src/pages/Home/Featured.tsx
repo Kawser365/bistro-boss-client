@@ -1,3 +1,4 @@
+"use client";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 import { Button, Flex, Grid } from "antd";
 import Image from "next/image";

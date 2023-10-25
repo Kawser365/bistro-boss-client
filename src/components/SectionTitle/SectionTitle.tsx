@@ -1,7 +1,5 @@
 "use client";
-
 import { Grid } from "antd";
-
 const { useBreakpoint } = Grid;
 interface TProps {
   header: string;
